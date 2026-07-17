@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { NavLink, Link } from "react-router-dom";
-import { LayoutDashboard, Settings, BarChart3, Menu, X, Sun, Activity, Wallet } from "lucide-react";
+import { LayoutDashboard, Settings, BarChart3, Menu, X, Sun, Activity, Wallet, Calendar as CalendarIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const navItems = [
@@ -10,6 +10,7 @@ const navItems = [
   { to: "/weather", label: "Weather", icon: Sun, testId: "navbar-link-weather" },
   { to: "/analytics", label: "Analytics", icon: Activity, testId: "navbar-link-analytics" },
   { to: "/portfolio", label: "Portfolio", icon: Wallet, testId: "navbar-link-portfolio" },
+  { to: "/calendar", label: "Calendar", icon: CalendarIcon, testId: "navbar-link-calendar" },
 ];
 
 export default function Navbar() {
