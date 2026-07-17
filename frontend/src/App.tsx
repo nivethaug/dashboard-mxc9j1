@@ -12,6 +12,7 @@ import Weather from "./pages/Weather";
 import Analytics from "./pages/Analytics";
 import Portfolio from "./pages/Portfolio";
 import CalendarPage from "./pages/Calendar";
+import Finance from "./pages/Finance";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -32,6 +33,7 @@ const App = () => (
           <Route path="/analytics" element={<Analytics />} />
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/calendar" element={<CalendarPage />} />
+          <Route path="/finance" element={<Finance />} />
               <Route path="*" element={<NotFound />} />
             </Route>
           </Routes>
