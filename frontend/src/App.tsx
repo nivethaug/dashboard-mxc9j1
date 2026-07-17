@@ -9,6 +9,7 @@ import Dashboard from "./pages/Dashboard";
 import Overview from "./pages/Overview";
 import Settings from "./pages/Settings";
 import Weather from "./pages/Weather";
+import Analytics from "./pages/Analytics";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -26,6 +27,7 @@ const App = () => (
               <Route path="/overview" element={<Overview />} />
               <Route path="/settings" element={<Settings />} />
               <Route path="/weather" element={<Weather />} />
+          <Route path="/analytics" element={<Analytics />} />
               <Route path="*" element={<NotFound />} />
             </Route>
           </Routes>
