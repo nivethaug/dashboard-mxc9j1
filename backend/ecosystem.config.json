@@ -1,0 +1,22 @@
+{
+  "apps": [
+    {
+      "name": "dashboard-mxc9j1-backend",
+      "script": "/root/dreampilot/dreampilotvenv/bin/uvicorn",
+      "args": "main:app --host 0.0.0.0 --port 8011",
+      "cwd": "/root/dreampilot/projects/website/1654_dashboard_20260717_032554/backend",
+      "interpreter": "none",
+      "instances": 1,
+      "exec_mode": "fork",
+      "watch": false,
+      "max_memory_restart": "500M",
+      "env": {
+        "PORT": "8011",
+        "BACKEND_HOST": "0.0.0.0",
+        "BACKEND_PORT": "8011",
+        "PROJECT_NAME": "dashboard-mxc9j1",
+        "DATABASE_URL": "postgresql://dashboard_mxc9j1_user:CYHU2MRRvbaORSJ0kMFSo44z9XOsIa44@localhost:5432/dashboard_mxc9j1_db"
+      }
+    }
+  ]
+}
