@@ -1,1 +1,1 @@
-openclaw project folder path: /root/dreampilot/projects/website/1654_dashboard_20260717_032554
+folder path: /root/dreampilot/projects/website/1654_dashboard_20260717_032554

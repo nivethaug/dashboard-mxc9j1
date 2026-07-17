@@ -1,12 +1,13 @@
 import { useState } from "react";
 import { NavLink, Link } from "react-router-dom";
-import { LayoutDashboard, Settings, BarChart3, Menu, X } from "lucide-react";
+import { LayoutDashboard, Settings, BarChart3, Menu, X, Sun } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const navItems = [
   { to: "/", label: "Dashboard", icon: LayoutDashboard, testId: "navbar-link-dashboard" },
   { to: "/overview", label: "Overview", icon: BarChart3, testId: "navbar-link-overview" },
   { to: "/settings", label: "Settings", icon: Settings, testId: "navbar-link-settings" },
+  { to: "/weather", label: "Weather", icon: Sun, testId: "navbar-link-weather" },
 ];
 
 export default function Navbar() {
