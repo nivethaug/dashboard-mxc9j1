@@ -129,7 +129,12 @@ export default function Weather() {
       const res = await fetch(url);
       if (!res.ok) throw new Error("Failed to fetch weather");
       const data = await res.json();
-      setWeather(data);
+      setWeather({
+        current: data.current_weather,
+        hourly: data.hourly,
+        daily: data.daily,
+        timezone: data.timezone,
+      });
     } catch (err) {
       setError("Unable to load weather data. Please try again.");
     } finally {
